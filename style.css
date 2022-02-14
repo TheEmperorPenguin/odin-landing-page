@@ -1,5 +1,6 @@
 * {
   border: solid red 1px;
+  box-sizing: border-box;
 }
 
 body {
@@ -10,7 +11,6 @@ body {
   margin: 0px;
   padding: 0px;
   height: auto;
-  
 }
 a {
   color: inherit;
@@ -34,7 +34,7 @@ a:hover {
 .section-2,
 .section-3,
 .footer {
-padding: 0px 3vw;
+  padding: 0px 3vw;
   display: flex;
   width: auto;
   flex-direction: column;
@@ -72,8 +72,7 @@ padding: 0px 3vw;
 }
 
 .button,
-.section-3,
-.button-container {
+.section-3 {
   background-color: #3882f6;
 }
 .section-1.title {
@@ -102,42 +101,28 @@ a:active {
 .header.presentation {
   flex-direction: row;
 }
-.header.text{
-    width: 50%;
+.header.text {
+  width: 50%;
 }
-.header.subtext{
+.header.subtext {
 }
-.button-container {
+.button {
   border: solid white 3px;
   align-self: flex-end;
   justify-self: flex-end;
-  width: 100px;
-  text-align: center;
   border-radius: 6px;
-  padding: 0;
-  flex-flow: nowrap;
+  color: #f9faf8;
+  user-select: none;
+  padding: 10px 20px;
 }
-.button-container:hover {
+.button:hover {
   background-color: #0a61ee;
   cursor: pointer;
 }
-.button-container:active{
+.button:active {
   transform: scale(0.98);
 }
-.button {
-  align-self: center;
-  border: none;
-    width: auto;
-  color: #f9faf8;
-  background-color: unset;
-  user-select: none;
-  border-radius: 0;
-}
-.header.button-container {
-  border: none;
-  align-self: flex-start;
-}
 
-.header{
-    
+.header.button {
+  border: none;
 }
